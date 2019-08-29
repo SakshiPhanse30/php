@@ -125,11 +125,7 @@ $conn=mysqli_connect("localhost","root","","website");
 </style>
 <h3 style="float:right;"><a href="login.php">Go to Admin Page</a></h3>
 <div  ></br>
-<!-- <div class="body-content" >
-<h2 style="color:blue;"; align="center" >Registration</h2></br></br></br> -->
 
-
-<!-- <link rel="stylesheet" href="form.css" type="text/css"> -->
   <div class="module">
 <h2>Register</h2>
 <form action="newwebsite.php" method="POST" id="" onSubmit="return validate();" height="60%" width="50%">
@@ -150,7 +146,7 @@ $conn=mysqli_connect("localhost","root","","website");
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required></input>
   </div></br></br>
-  <div>    <!-- <label>Gender:</label> -->
+  <div>   
       <div>
        Gender:<input type="radio" name="gender" value="male" required>Male
   <input type="radio" name="gender" value="female" required>Female<br>
@@ -179,30 +175,8 @@ $conn=mysqli_connect("localhost","root","","website");
 <script type="text/javascript">
   $(document).ready(function() {
 
-  // $('#first_form').submit(function(e) {
-  //   e.preventDefault();
-  //   var username = $('#first_name').val();
-  //   var phone = $('#phone').val();
-  //   var email = $('#email').val();
-  //   var gender = $('#gender').val();
-
-  //   $(".error").remove();
-
-  //   if (username.length < 1) {
-  //     $('#username').after('<span class="error">This field is required</span>');
-  //   }
-    
-  //   if (email.length < 1) {
-  //     $('#email').after('<span class="error">This field is required</span>');
-  //   } else {
-  //     var regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/;
-  //     var validEmail = regEx.test(email);
-  //     if (!validEmail) {
-  //       $('#email').after('<span class="error">Enter a valid email</span>');
-  //     }
-  //   }
-    
-  // });
+  
+	  
 
   $("#first_form").validate({
     submitHandler: function(form) {
